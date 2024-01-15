@@ -17,7 +17,7 @@ body{
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 800;
-    padding: 14px 35px;
+    padding: 12px 35px;
     background: #FF5400;
     border: none;
     border-radius: 8px;
@@ -283,10 +283,72 @@ nav li:first-child a{
     color: #5A5A5D;
 }
 
+/* newsletter section styles */
+.newsletter{
+    padding: 70px 135px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.newsletter-content{
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-title{
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.newsletter-para{
+    color: #5A5A5D;
+}
+hr{
+    margin-top: 20px;
+}
+.newsletter input{
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 12px 35px;
+    margin-top: 20px;
+    border: none;
+}
+.newsletter .img-container{
+    width: 60%;
+    position: relative;
+}
+.newsletter .img-container img{
+    width: 100%;
+}
+.save-up-text{
+    width: 250px;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+    bottom: 12%;
+    right: 1.5%;
+    transform: rotate(-19.628deg);
+}
+.travel{
+    color: #FFF;
+    font-size: 1rem;
+}
+.save-up{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 /* responsive media queries code here */
 /* small or mobile responsive */
 @media  screen and (max-width: 600px) {
-    nav, nav > ul, .tour{
+    nav, nav > ul, .tour, .newsletter{
         justify-content: center;
         flex-direction: column;
         padding: 10px;
@@ -303,10 +365,12 @@ nav li:first-child a{
         flex-direction: column;
         padding: 20px;
     }
-    .banner-input .input, .banner-input .button{
-        width: 100%;
-    }
-    .tour .tour-content, .tour .img-container{
+    .banner-input .input,
+    .banner-input .button,
+    .tour .tour-content,
+    .tour .img-container,
+    .newsletter-content,
+    .newsletter .img-container{
         width: 100%;
     }
     .destination .img-container{
