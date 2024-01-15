@@ -1,5 +1,5 @@
 /* google font Mulish */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 
 /* shared styles */
 *{
@@ -29,7 +29,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 127px 50px 135px;
+    padding: 30px 127px 25px 135px;
 }
 .nav-title{
     display: inline-flex;
@@ -102,6 +102,7 @@ nav li:first-child a{
     background: #FFF;
     border: none;
     display: inline-flex;
+    color: rgba(19, 19, 24, 0.50);
 }
 .banner-input .button{
     width: 25%;
@@ -109,6 +110,7 @@ nav li:first-child a{
 .input input, .button button{
     width: 100%;
     border: none;
+    color: #FFF;
 }
 
 .banner-input button{
@@ -176,6 +178,7 @@ nav li:first-child a{
 }
 .destination-description{
     color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 35px;
 }
 .destination .img-container{
     display: grid;
@@ -233,7 +236,7 @@ nav li:first-child a{
 }
 .choose-content{
     text-align: center;
-    padding: 50px 100px;
+    padding: 35px 100px;
 }
 .choose-content .choose-content-title{
     color: #131318;
@@ -345,6 +348,35 @@ hr{
     font-weight: 800;
 }
 
+/* footer section styles */
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 70px 175px;
+    text-align: center;
+}
+.footer-content{
+    text-align: center;
+    padding: 0 25px;
+}
+.footer-description{
+    color: #5A5A5D;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.social-media-icons{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+footer hr{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.copyright-text{
+    color: #131318;
+    font-weight: 300;
+}
+
 /* responsive media queries code here */
 /* small or mobile responsive */
 @media  screen and (max-width: 600px) {
@@ -353,10 +385,11 @@ hr{
         flex-direction: column;
         padding: 10px;
     }
-    .banner, .destination, .choose{
+    .banner, .destination, .choose, .footer-content{
         padding: 10px;
     }
-    .banner-content, .destination-content, .choose-content{
+    .banner-content, .destination-content, .choose-content,
+    footer{
         padding: 25px;
     }
     .banner-input{
