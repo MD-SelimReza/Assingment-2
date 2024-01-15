@@ -227,6 +227,62 @@ nav li:first-child a{
     transform: translate(-50%, -50%);
 }
 
+/* choose section styles */
+.choose{
+    padding: 0 135px;
+}
+.choose-content{
+    text-align: center;
+    padding: 50px 100px;
+}
+.choose-content .choose-content-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.choose-content .choose-content-description{
+    color: rgba(19, 19, 24, 0.70);
+}
+.choose-card-container{
+    display: grid;
+    grid-template-areas: 
+    "card-1 card-1 card-2 card-2"
+    " .      card-3 card-3   .   "
+    ;
+    gap: 20px;
+}
+#card-1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    grid-area: card-1;
+}
+#card-2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    grid-area: card-2;
+}
+#card-3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    grid-area: card-3;
+}
+.choose-card-container .card{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    padding: 25px;
+}
+.card-heading{
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.card-description{
+    color: #5A5A5D;
+}
+
 /* responsive media queries code here */
 /* small or mobile responsive */
 @media  screen and (max-width: 600px) {
@@ -235,10 +291,10 @@ nav li:first-child a{
         flex-direction: column;
         padding: 10px;
     }
-    .banner, .destination{
+    .banner, .destination, .choose{
         padding: 10px;
     }
-    .banner-content, .destination-content{
+    .banner-content, .destination-content, .choose-content{
         padding: 25px;
     }
     .banner-input{
@@ -262,6 +318,13 @@ nav li:first-child a{
         "K"
         "B"
         "b"
+        ;
+    }
+    .choose-card-container{
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
         ;
     }
 }
