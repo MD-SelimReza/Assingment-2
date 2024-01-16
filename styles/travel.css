@@ -569,7 +569,7 @@ footer hr{
     .deals-and-discount,
     .tour, .simple,
     .newsletter {
-        padding: 20px 35px;
+        padding: 20px 15px;
     }
 
     .tour .tour-content,
@@ -629,7 +629,6 @@ footer hr{
     .tour-card{
         width: 100%;
         max-width: 450px;
-        /* margin: 0 auto; */
     }
     .footer-content{
         padding: 10px 50px;
