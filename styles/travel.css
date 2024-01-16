@@ -253,7 +253,7 @@ nav li:first-child a{
     display: grid;
     grid-template-areas: 
     "card-1 card-1 card-2 card-2"
-    " .      card-3 card-3   .   "
+    " .     card-3 card-3   .   "
     ;
     gap: 20px;
 }
@@ -360,7 +360,7 @@ nav li:first-child a{
     margin: 20px 0;
 }
 #tour-card-1{
-    margin-left: 220px;
+    margin-left: 210px;
 }
 
 /* simple section styles */
@@ -541,5 +541,100 @@ footer hr{
     }
     #tour-card-1, #tour-card-2{
         margin: 250px auto 0;
+    }
+    .tour-card {
+        width: 100%;
+    }
+
+    .tour-card-header {
+        flex-wrap: wrap;
+    }
+    .save-up-text{
+        bottom: 14%;
+    }
+}
+
+/* medium or tablet devices */
+@media  screen and (min-width: 600px) and (max-width: 992px) {
+    nav {
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 35px;
+    }
+    .banner,
+    .destination,
+    .choose,
+    .footer-content,
+    .deals-and-discount,
+    .tour, .simple,
+    .newsletter {
+        padding: 20px 35px;
+    }
+
+    .tour .tour-content,
+    .tour .img-container,
+    .newsletter-content,
+    .newsletter .img-container{
+        width: 50%;
+    }
+
+    .banner-content,
+    .destination-content,
+    .choose-content,
+    footer,
+    .deals-and-discount-content {
+        padding: 25px;
+    }
+    .banner-input {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .banner-input .input,
+    .banner-input .button,
+    .newsletter-content,
+    .newsletter .img-container,
+    .simple-content,
+    .simple .img-container {
+        width: 100%;
+    }
+    .destination .img-container {
+        grid-template-areas:
+            "M I"
+            "S A"
+            "K B"
+            "b ."
+        ;
+    }
+
+    .choose-card-container {
+        grid-template-areas:
+            "card-1"
+            "card-2"
+            "card-3"
+        ;
+    }
+
+    .choose-card-container .card{
+        text-align: center;
+    }
+
+    #tour-card-1,
+    #tour-card-2 {
+        margin: 0 auto;
+    }
+    .tour-card{
+        width: 100%;
+        max-width: 450px;
+        /* margin: 0 auto; */
+    }
+    .footer-content{
+        padding: 10px 50px;
+    }
+    .save-up-text{
+        width: 230px;
     }
 }
