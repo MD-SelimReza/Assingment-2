@@ -22,6 +22,7 @@ body{
     border: none;
     border-radius: 8px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 /* header section styles */
@@ -122,6 +123,7 @@ nav li:first-child a{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 /* tour section styles */
@@ -350,18 +352,50 @@ nav li:first-child a{
 #tour-card-container-1{
     border-radius: 16px;
     background: url('../Images/Group 39.png'), lightgray 50% / cover no-repeat;
+    background-size: cover;
     padding: 35px;
     margin: 20px 0;
+    position: relative;
 }
 #tour-card-container-2{
     border-radius: 16px;
     background: url('../Images/Group 40.png'), lightgray 50% / cover no-repeat;
+    background-size: cover;
     padding: 35px;
     margin: 20px 0;
+    position: relative;
 }
 #tour-card-1{
+    position: relative;
     margin-left: 210px;
 }
+
+
+/* special section styles */
+.special{
+    padding: 30px 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.special-content, .video-container{
+    width: 50%;
+}
+.special-content-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.special-content-description{
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 20px;
+}
+/* .video-container video{
+    width: 100%;
+    height: 100%;
+} */
 
 /* simple section styles */
 .simple{
@@ -477,6 +511,7 @@ footer{
     display: inline-flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
 }
 footer hr{
     margin-top: 45px;
@@ -490,7 +525,7 @@ footer hr{
 /* responsive media queries code here */
 /* small or mobile responsive */
 @media  screen and (max-width: 600px) {
-    nav, nav > ul, .tour, .newsletter, .simple{
+    nav, nav > ul, .tour, .newsletter, .simple, .special{
         justify-content: center;
         flex-direction: column;
         padding: 10px;
@@ -515,7 +550,9 @@ footer hr{
     .newsletter-content,
     .newsletter .img-container,
     .simple-content,
-    .simple .img-container{
+    .simple .img-container,
+    .special-content,
+    .video-container{
         width: 100%;
     }
     .destination .img-container{
@@ -568,7 +605,8 @@ footer hr{
     .footer-content,
     .deals-and-discount,
     .tour, .simple,
-    .newsletter {
+    .newsletter,
+    .special {
         padding: 20px 15px;
     }
 
