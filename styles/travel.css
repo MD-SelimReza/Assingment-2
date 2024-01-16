@@ -10,15 +10,23 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* COLOR */
+    --PRIMARY-COLOR:#FF5400;
+    --SECONDARY-COLOR:#131318;
+    --TEXT-COLOR: #5A5A5D;
+    --WHITE-COLOR: #FFF;
+}
+
 body{
     font-family: 'Mulish', sans-serif;
 }
 .btn-primary{
-    color: #FFF;
+    color: var(--WHITE-COLOR);
     font-size: 1.25rem;
     font-weight: 800;
     padding: 12px 35px;
-    background: #FF5400;
+    background: var(--PRIMARY-COLOR);
     border: none;
     border-radius: 8px;
     margin-top: 20px;
@@ -38,12 +46,12 @@ nav{
     gap: 8px;
 }
 .nav-title .primary-text{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.25rem;
     font-weight: 800;
 }
 .nav-title .secondary-text{
-    color: #FF5400;
+    color: var(--PRIMARY-COLOR);
     font-size: 2.25rem;
     font-weight: 800;
 }
@@ -58,7 +66,7 @@ nav li a{
     font-weight: 400;
 }
 nav li:first-child a{
-    color: #FF5400;
+    color: var(--PRIMARY-COLOR);
     font-weight: 700;
 }
 
@@ -76,15 +84,13 @@ nav li:first-child a{
     text-align: center;
 }
 .banner-title{
-    color: #FFF;
+    color: var(--WHITE-COLOR);
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 15px;
 }
 .banner-description{
-    color: #FFF;
-    /* width: 520px; */
-    /* margin: 0 auto; */
+    color: var(--WHITE-COLOR);
 }
 .banner-input{
     border-radius: 8px;
@@ -100,7 +106,7 @@ nav li:first-child a{
     width: 25%;
     padding: 10px;
     border-radius: 8px;
-    background: #FFF;
+    background: var(--WHITE-COLOR);
     border: none;
     display: inline-flex;
     color: rgba(19, 19, 24, 0.50);
@@ -111,11 +117,11 @@ nav li:first-child a{
 .input input, .button button{
     width: 100%;
     border: none;
-    color: #FFF;
+    color: var(--WHITE-COLOR);
 }
 
 .banner-input button{
-    background: #FF5400;
+    background: var(--PRIMARY-COLOR);
     padding: 10px;
     border-radius: 8px;
     border: none;
@@ -137,7 +143,7 @@ nav li:first-child a{
     width: 55%;
 }
 .tour-content .tour-content-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
@@ -152,7 +158,7 @@ nav li:first-child a{
     margin-left: 20px;
 }
 .tour-content-description .last-para{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
     margin-top: 20px;
 }
 .tour .img-container{   
@@ -174,7 +180,7 @@ nav li:first-child a{
     text-align: center;
 }
 .destination-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
@@ -226,7 +232,7 @@ nav li:first-child a{
     position: relative;
 }
 .text{
-    color: #FFF;
+    color: var(--WHITE-COLOR);
     font-size: 2rem;
     font-weight: 800;
     position: absolute;
@@ -244,7 +250,7 @@ nav li:first-child a{
     padding: 35px 100px;
 }
 .choose-content .choose-content-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
 }
@@ -281,7 +287,7 @@ nav li:first-child a{
     padding: 25px;
 }
 .card-heading{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 1.25rem;
     font-weight: 800;
     margin-top: 20px;
@@ -300,7 +306,7 @@ nav li:first-child a{
     padding: 0 100px;
 }
 .deals-and-discount-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
@@ -328,23 +334,23 @@ nav li:first-child a{
     gap: 10px;
 }
 .tour-card-header > div i{
-    color: #FF5400;
+    color: var(--PRIMARY-COLOR);
 }
 .tour-card-header > div span{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
 }
 .tour-card-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 15px;
 }
 .tour-card-description{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
     margin-bottom: 15px;
 }
 .tour-card-price{
-    color: #FF5400;
+    color: var(--PRIMARY-COLOR);
     font-size: 1.25rem;
     font-weight: 800;
 }
@@ -383,7 +389,7 @@ nav li:first-child a{
     width: 50%;
 }
 .special-content-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
@@ -392,10 +398,6 @@ nav li:first-child a{
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 20px;
 }
-/* .video-container video{
-    width: 100%;
-    height: 100%;
-} */
 
 /* simple section styles */
 .simple{
@@ -407,13 +409,13 @@ nav li:first-child a{
     width: 50%;
 }
 .simple-content-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
 .simple-content-description{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
     margin-bottom: 20px;
 }
 .simple-content > ul li{
@@ -421,7 +423,7 @@ nav li:first-child a{
     list-style-position: unset;
     margin-left: 20px;
     margin-bottom: 15px;
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-weight: 700;
 }
 .img-container .mountain img{
@@ -440,19 +442,19 @@ nav li:first-child a{
 .newsletter-content{
     width: 40%;
     border-radius: 16px;
-    border: 1px solid #FF5400;
+    border: 1px solid var(--PRIMARY-COLOR);
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 .newsletter-title{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 10px;
 }
 .newsletter-para{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
 }
 hr{
     margin-top: 20px;
@@ -474,7 +476,7 @@ hr{
 .save-up-text{
     width: 250px;
     border-radius: 16px;
-    background: #FF5400;
+    background: var(--PRIMARY-COLOR);
     text-align: center;
     padding: 12px;
     position: absolute;
@@ -483,11 +485,11 @@ hr{
     transform: rotate(-19.628deg);
 }
 .travel{
-    color: #FFF;
+    color: var(--WHITE-COLOR);
     font-size: 1rem;
 }
 .save-up{
-    color: #FFF;
+    color: var(--WHITE-COLOR);
     font-size: 1.5rem;
     font-weight: 800;
 }
@@ -503,7 +505,7 @@ footer{
     padding: 0 25px;
 }
 .footer-description{
-    color: #5A5A5D;
+    color: var(--TEXT-COLOR);
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -518,7 +520,7 @@ footer hr{
     margin-bottom: 45px;
 }
 .copyright-text{
-    color: #131318;
+    color: var(--SECONDARY-COLOR);
     font-weight: 300;
 }
 
@@ -587,7 +589,7 @@ footer hr{
         flex-wrap: wrap;
     }
     .save-up-text{
-        bottom: 14%;
+        bottom: 16%;
     }
 }
 
